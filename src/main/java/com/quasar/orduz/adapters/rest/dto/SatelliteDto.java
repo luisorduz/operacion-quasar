@@ -1,4 +1,4 @@
-package com.quasar.orduz.domain.model;
+package com.quasar.orduz.adapters.rest.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,11 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Satellite {
-
-    @NotEmpty(message = "El campo 'name' no puede estar vacío")
-    private String name;
-
+public class SatelliteDto {
     @NotNull(message = "El campo 'distance' no puede ser nulo")
     private double distance;
 
@@ -24,10 +20,8 @@ public class Satellite {
     @Size(min = 1, message = "El campo 'message' debe contener al menos un mensaje")
     private List<String> message;
 
-    public Satellite(String name, double distance, List<String> message) {
-        this.name = name;
+    public SatelliteDto(double distance, List<String> message) {
         this.distance = distance;
         this.message = message;
     }
-
 }

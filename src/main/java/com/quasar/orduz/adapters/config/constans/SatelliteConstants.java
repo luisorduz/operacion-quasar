@@ -1,4 +1,4 @@
-package com.quasar.orduz.adapters.constans;
+package com.quasar.orduz.adapters.config.constans;
 
 public final class SatelliteConstants {
 

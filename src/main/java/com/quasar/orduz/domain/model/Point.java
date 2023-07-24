@@ -1,8 +1,10 @@
 package com.quasar.orduz.domain.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Point {
 
     private double x;

@@ -12,7 +12,6 @@ import java.util.Collections;
 
 @Configuration
 public class SwaggerConfig {
-
     private ApiInfo apiInfo() {
         return new ApiInfo("Operation Quasar Rest API",
                 "APIs for Operation Quasar.",
@@ -33,6 +32,4 @@ public class SwaggerConfig {
                         .basePackage("com.quasar.orduz.adapters.rest.controller"))
                 .build();
     }
-
-
 }

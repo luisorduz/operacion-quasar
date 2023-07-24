@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.quasar.orduz.adapters.constans.SatelliteConstants.SATELLITE_POSITIONS;
+import static com.quasar.orduz.adapters.config.constans.SatelliteConstants.SATELLITE_POSITIONS;
 
 @Service
 public class CommunicationManagerImpl implements CommunicationManager {

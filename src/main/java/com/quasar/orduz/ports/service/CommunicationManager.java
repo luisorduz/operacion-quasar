@@ -16,5 +16,4 @@ public interface CommunicationManager {
 
     // Método para obtener el mensaje original que emite el emisor
     String getMessage(List<Satellite> satellites) throws Exception;
-
 }

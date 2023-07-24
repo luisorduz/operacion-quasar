@@ -1,11 +1,15 @@
 package com.quasar.orduz.adapters.rest.exceptions;
 
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
 import java.util.Arrays;
 import java.util.List;
 
+@Getter
+@Setter
 public class ApiErrorResponse {
     private HttpStatus status;
     private String message;
@@ -23,30 +27,6 @@ public class ApiErrorResponse {
         this.status = status;
         this.message = message;
         errors = Arrays.asList(error);
-    }
-
-    public HttpStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(HttpStatus status) {
-        this.status = status;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public List<String> getErrors() {
-        return errors;
-    }
-
-    public void setErrors(List<String> errors) {
-        this.errors = errors;
     }
 }
 

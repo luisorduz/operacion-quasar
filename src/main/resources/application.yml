@@ -4,6 +4,22 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
+#    datasource:
+#      url: jdbc:postgresql://abcd.abcd.us-east-1.rds.amazonaws.com:5432/name_db
+#      driver-class-name: org.postgresql.Driver
+#      username: Su_user
+#      password: "#Su_pass"
+    datasource:
+      username: sa
+      url: jdbc:h2:mem:testdb
+      driverClassName: org.h2.Driver
+      password: password
+      h2:
+        console:
+          enabled: 'true'
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      show-sql: true
 
 server:
   port: 8081
